@@ -1,10 +1,10 @@
 @font-face {
     font-family: logoFont;
-    src: url("/Users/jaredschulz/repos/shopping-cart/src/assets/Microgramma D Extended Bold/Microgramma D Extended Bold.otf");
+    src: url("../assets/fonts/Microgramma D Extended Bold/Microgramma D Extended Bold.otf");
 }
 
 .navbar{
-    height: 100px;
+    height: 15%;
     width: 100%;
     border-bottom: 2px solid white;
     display: flex;
