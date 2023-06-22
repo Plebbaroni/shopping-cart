@@ -1,0 +1,48 @@
+@font-face {
+    font-family: logoFont;
+    src: url("/Users/jaredschulz/repos/shopping-cart/src/assets/Microgramma D Extended Bold/Microgramma D Extended Bold.otf");
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 5%;
+    width: 30%;
+    font-family: logoFont;
+    font-size: 20px;
+    color: yellow;
+    text-decoration: none;
+}
+
+.links{
+    width: 20%;
+    margin-left: 45%;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-family: logoFont;
+}
+
+.link{
+    color:yellow;
+    text-decoration: none;
+}
+
+.cartbutton{
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    color: white;
+}
