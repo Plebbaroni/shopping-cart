@@ -1,0 +1,22 @@
+@font-face {
+    font-family: logoFont;
+    src: url("../assets/fonts/Microgramma D Extended Bold/Microgramma D Extended Bold.otf");
+}
+
+.shopPage{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shopTitle{
+    color: white;
+    font-family: logoFont;
+    height: 10%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

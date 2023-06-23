@@ -8,7 +8,7 @@ export const Navbar = () => {
         <div className="navbar">
             <Link to="/" className="logo">camelCase Records</Link>
             <div className = "links">
-                <Link to="store" className="link">Products</Link>
+                <Link to="../pages/shoppage" className="link">Products</Link>
                 <button
                     className="cartbutton"
                     //onClick={openCart}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Router, Routes, Link } from "react-router-dom";
 import "../css/homepage.css"
 
 export const Homepage = () => {

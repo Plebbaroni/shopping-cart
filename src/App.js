@@ -9,8 +9,8 @@ function App() {
     <div className='appWrapper'>
         <div className="App">
           <Router>
-          <Navbar />
-          <Main />
+            <Navbar />
+            <Main />
           </Router>
       </div>
     </div>

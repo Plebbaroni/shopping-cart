@@ -1,12 +1,12 @@
-import inrainbows from "./assets/images/Inrainbowscover.png";
-import blur from "./assets/images/blurcover.png";
-import post from "./assets/images/postcover.png";
-import liveloveasap from "./assets/images/liveloveasapcover.png";
-import stationtostation from "./assets/images/stationtostationcover.png";
-import souvlaki from "./assets/images/souvlakicover.png";
-import revolver from "./assets/images/revolvercover.png";
-import gkmc from "./assets/images/goodkidmaadcitycover.png";
-import deathconsciousness from "./assets/images/deathconsciousnesscover.png";
+import inrainbows from "../assets/images/Inrainbowscover.png";
+import blur from "../assets/images/blurcover.jpeg";
+import post from "../assets/images/postcover.png";
+import liveloveasap from "../assets/images/liveloveasapcover.jpeg";
+import stationtostation from "../assets/images/stationtostationcover.jpeg";
+import souvlaki from "../assets/images/souvlakicover.jpeg";
+import revolver from "../assets/images/revolvercover.jpeg";
+import gkmc from "../assets/images/goodkidmaadcitycover.jpeg";
+import deathconsciousness from "../assets/images/deathconsciousnesscover.jpeg";
 
 export const PRODUCTS = [
     {
