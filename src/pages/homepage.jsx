@@ -7,7 +7,7 @@ export const Homepage = () => {
         <div className="homepage">
             <div className="homepagecontent">
                 <p className="text">The best music, from our site to your door.</p>
-                <Link to="/shoppage" className="homepagebutton">Buy Now</Link>
+                <Link to="../pages/shoppage" className="homepagebutton">Buy Now</Link>
             </div>
         </div>
     );
