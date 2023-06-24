@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/product.css";
-
+import {addToCart} from "../App";
 export const Product = (props) => {  
     const {id, productName, price, image} = props.data;
 
@@ -11,7 +11,7 @@ export const Product = (props) => {
                 <p className="productName">{productName}</p>
                 <p className="price">${price}</p>
             </div>
-            <button className="cartButton">
+            <button className="cartButton" onClick={() => props.addToCart(id)}>
                 Add To Cart
             </button>
         </div>
