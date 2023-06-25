@@ -6,7 +6,7 @@ import { Homepage } from "./pages/homepage";
 import Main from "./components/main";
 import { Cart } from "./components/cart";
 import {PRODUCTS} from "./products/products";
-
+import {Backdrop} from "./components/backdrop";
 
 function App(){
   const resetCart = () => {
@@ -18,6 +18,7 @@ function App(){
   }
   
   const [shoppingCart, setShoppingCart] = useState(resetCart());
+  const [cartOpen, setCartOpen] = useState("false");
 
   const addToCart = (id) =>{
     setShoppingCart((shoppingCart) => ({...shoppingCart, [id]: shoppingCart[id] + 1}));
@@ -32,11 +33,11 @@ function App(){
     <div className='appWrapper'>
         <div className="App">
           <Router>
-            <Navbar />
-            <Main addToCart={addToCart}/>
             <Cart 
               currentCart = {shoppingCart}
             />
+            <Navbar />
+            <Main addToCart={addToCart}/>
           </Router>
       </div>
     </div>

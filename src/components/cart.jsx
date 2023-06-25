@@ -1,6 +1,7 @@
 import React from "react";
 import CartItem from "./cartitem";
 import {PRODUCTS} from "../products/products";
+import "../css/cart.css";
 export const Cart = (
     props
 ) => {
@@ -8,11 +9,10 @@ export const Cart = (
     return(
         <div className="cart">
             <div className="cartTitle">
-                <h1>Your Cart</h1>
+                <p className="yourproducts">Your Products</p>
             </div>
             <div className="currentItems">
                 {PRODUCTS.map((product) => {
-                    console.log(`${props.currentCart[product.id]}`)
                     if(props.currentCart[product.id] !== 0){
                         return <CartItem data={product}/>
                     }
