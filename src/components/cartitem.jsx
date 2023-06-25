@@ -6,9 +6,9 @@ const CartItem = (props) => {
     return(
         <div className="currentItem">
             <img className="currentImg" src={image}/>
-            <p>{productName}</p>
-            <p>${price}</p>
-            <button>X</button>
+            <p className="currentName">{productName}</p>
+            <p className="currentPrice">${price}</p>
+            <button className="removeButton" onClick={() => props.removeFromCart(id)}>X</button>
         </div>
     )
 }

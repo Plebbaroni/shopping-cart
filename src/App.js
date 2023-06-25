@@ -17,26 +17,46 @@ function App(){
     return cart;
   }
   
+  let backdrop;
   const [shoppingCart, setShoppingCart] = useState(resetCart());
-  const [cartOpen, setCartOpen] = useState("false");
+  const [cartCondition, setCartCondition] = useState("cart");
 
   const addToCart = (id) =>{
-    setShoppingCart((shoppingCart) => ({...shoppingCart, [id]: shoppingCart[id] + 1}));
+    if(shoppingCart[id] === 1){
+      alert("Sorry. Only one of each product can be bought at a time.");
+    }else{
+      setShoppingCart((shoppingCart) => ({...shoppingCart, [id]: shoppingCart[id] + 1}));
+    }
     console.log(`${id}`);
   }
 
   const removeFromCart = (id) => {
-    setShoppingCart(shoppingCart.filter((product) => product.id !== id));
+    setShoppingCart((shoppingCart) => ({...shoppingCart, [id]: shoppingCart[id] - 1}));
+  }
+
+  const openCart = () => {
+    setCartCondition(("cartOpen"));
+  }
+
+  const closeCart = () => {
+    setCartCondition(("cart"));
+  }
+
+  if(cartCondition === "cartOpen"){
+    backdrop = <Backdrop closeCart={closeCart}/>
   }
 
   return (
     <div className='appWrapper'>
         <div className="App">
           <Router>
+            {backdrop}
             <Cart 
+              className = {cartCondition}
               currentCart = {shoppingCart}
+              removeFromCart = {removeFromCart}
             />
-            <Navbar />
+            <Navbar openCart = {openCart}/>
             <Main addToCart={addToCart}/>
           </Router>
       </div>

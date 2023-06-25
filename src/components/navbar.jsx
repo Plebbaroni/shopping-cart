@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../css/navbar.css"
 import { ShoppingCart } from "phosphor-react";
 
-export const Navbar = () => {
+export const Navbar = (props) => {
     return(
         <div className="navbar">
             <Link to="/" className="logo">camelCase Records</Link>
@@ -13,7 +13,7 @@ export const Navbar = () => {
                     className="cartbutton"
                     //onClick={openCart}
                     >
-                        <ShoppingCart size = {32}/>
+                        <ShoppingCart size = {32} onClick={props.openCart}/>
                     </button>
             </div>
         </div>

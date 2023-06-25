@@ -7,14 +7,14 @@ export const Cart = (
 ) => {
     
     return(
-        <div className="cart">
+        <div className={props.className}>
             <div className="cartTitle">
                 <p className="yourproducts">Your Products</p>
             </div>
             <div className="currentItems">
                 {PRODUCTS.map((product) => {
                     if(props.currentCart[product.id] !== 0){
-                        return <CartItem data={product}/>
+                        return <CartItem data={product} removeFromCart={props.removeFromCart}/>
                     }
                 })}
             </div>

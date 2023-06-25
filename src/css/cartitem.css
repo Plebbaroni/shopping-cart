@@ -1,5 +1,45 @@
+@font-face {
+    font-family: contentFont;
+    src: url("../assets/fonts/Latin-Modern-Mono/lmmonolt10-bold.otf");
+}
+
 .currentItem{
     height: 200px;
-    width: 100%;
+    width: 90%;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 0.5px solid gray;
+}
+
+.currentImg{
+    height: 180px;
+    width: 180px;
+}
+
+.currentName{
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: contentFont;
+    text-align: center;
+}
+
+.currentPrice{
+    font-family: contentFont;
+}
+@media only screen and (max-width: 1100px) {
+    .currentName{
+        width: 100px;
+    }
+}
+
+.removeButton{
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
 }

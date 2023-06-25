@@ -44,3 +44,8 @@
     background-color: yellow;
     font-family: contentFont;
 }
+
+.cartButton:hover{
+    background-color: white;
+    cursor: pointer;
+}

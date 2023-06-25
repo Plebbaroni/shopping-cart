@@ -1,3 +1,13 @@
+@font-face {
+    font-family: logoFont;
+    src: url("../assets/fonts/Microgramma D Extended Bold/Microgramma D Extended Bold.otf");
+}
+
+.cartTitle{
+    font-size: 36px;
+    font-family: logoFont;
+}
+
 .cart{
     margin: 0;
     height: 100%;
@@ -5,15 +15,40 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 30%;
+    width: 60%;
+    z-index: 100;
+    box-shadow: 1px 0px 7px rgba(0,0,0,0.5); 
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartOpen {
+    margin: 0;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
     z-index: 100;
     box-shadow: 1px 0px 7px rgba(0,0,0,0.5); 
     transform: translateX(100);
     transition: transform 0.3s ease-out;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.cart.open{
-    transform: translateX(100);
+.currentItems{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hello{

@@ -2,9 +2,9 @@ import React from "react";
 import "../css/backdrop.css";
 
 
-export const Backdrop = () => {
+export const Backdrop = (props) => {
     return(
-        <div className="backdrop" />
+        <div className="backdrop" onClick={props.closeCart}/>
     );
 }
 
